@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "name": "React-Bubbles",
+  "builds": [
+    {
+      "src": "React-Bubbles/package.json",
+      "use": "@now/static-build",
+      "config": { "distDir": "build" }
+    }
+  ],
+  "routes": [{ "src": "/(.*)", "dest": "React-Bubbles/$1" }]
+}
